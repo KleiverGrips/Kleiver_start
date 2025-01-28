@@ -15,18 +15,20 @@
     surname VARCHAR(50) 
 );
  ```
+
 ```bash
 CREATE TABLE name ( 
     name_id INT PRIMARY KEY,
     name VARCHAR(50)
 );
 ```
- ```bash
+
+```bash
 CREATE TABLE patronymic ( 
     patronymic_id INT PRIMARY KEY,
     patronymic VARCHAR(50)
 );
-    ```
+```
 
 2. Загрузите данные в таблицы:
 
@@ -36,22 +38,23 @@ CREATE TABLE patronymic (
     ('2', 'Петров'),
     ('3', 'Сидоров');
 ```
+
 ```bash
 INSERT INTO name (name_id, name) VALUES 
     ('1', 'Иван'),
     ('2', 'Петр'),
     ('3', 'Сидор');
 ```
+
  ```bash
 INSERT INTO patronymic (patronymic_id, patronymic) VALUES 
     ('1', 'Иванович'),
     ('2', 'Петрович'),
     ('3', 'Сидорович');
-    ```
+```
 
 3. Проверьте данные:
-
-    Выполните следующий скрипт, чтобы инициализировать базу данных SQLite:
+Выполните следующий скрипт, чтобы инициализировать базу данных SQLite:
 
     
 SELECT *
