@@ -56,12 +56,12 @@ INSERT INTO patronymic (patronymic_id, patronymic) VALUES
 3. Проверьте данные:
 Выполните следующий скрипт, чтобы инициализировать базу данных SQLite:
 
-    
-SELECT *
-FROM surname 
-FULL JOIN name ON surname_id = name_id
-FULL JOIN patronymic ON name_id = patronymic_id;
-
+```bash
+    SELECT *
+    FROM surname 
+    FULL JOIN name ON surname_id = name_id
+    FULL JOIN patronymic ON name_id = patronymic_id;
+```
 
 ## 🥳 Заключение.
 
