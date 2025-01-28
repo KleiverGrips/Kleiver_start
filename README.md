@@ -9,17 +9,19 @@
 
 1. Создайте таблицы:
 
-    ```bash
+```bash
     CREATE TABLE surname ( 
     surname_id INT PRIMARY KEY,
     surname VARCHAR(50) 
 );
-    
+ ```
+```bash
 CREATE TABLE name ( 
     name_id INT PRIMARY KEY,
     name VARCHAR(50)
 );
-    
+```
+ ```bash
 CREATE TABLE patronymic ( 
     patronymic_id INT PRIMARY KEY,
     patronymic VARCHAR(50)
@@ -28,17 +30,19 @@ CREATE TABLE patronymic (
 
 2. Загрузите данные в таблицы:
 
-    ```bash
+ ```bash
    INSERT INTO surname (surname_id, surname) VALUES 
     ('1', 'Иванов'),
     ('2', 'Петров'),
     ('3', 'Сидоров');
-
+```
+```bash
 INSERT INTO name (name_id, name) VALUES 
     ('1', 'Иван'),
     ('2', 'Петр'),
     ('3', 'Сидор');
-
+```
+ ```bash
 INSERT INTO patronymic (patronymic_id, patronymic) VALUES 
     ('1', 'Иванович'),
     ('2', 'Петрович'),
@@ -49,12 +53,12 @@ INSERT INTO patronymic (patronymic_id, patronymic) VALUES
 
     Выполните следующий скрипт, чтобы инициализировать базу данных SQLite:
 
-    ```bash
+    
 SELECT *
 FROM surname 
 FULL JOIN name ON surname_id = name_id
 FULL JOIN patronymic ON name_id = patronymic_id;
-    ```
+
 
 ## 🥳 Заключение.
 
